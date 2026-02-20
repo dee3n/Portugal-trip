@@ -272,17 +272,13 @@
     <h2 class="section-title">Confirmations & Bookings</h2>
     <div class="section-divider"></div>
     <div class="restaurant-grid" id="conf-grid">
-        <div class="r-card fancy">
-            <div class="r-name">Flight Confirmation</div>
-            <div class="r-desc">TAP Air #12345</div>
-            <a href="YOUR_LINK_HERE" class="r-link">View Document</a>
-            <span class="r-tag">Travel</span>
-        </div>
-        <div class="r-card add-card" onclick="openModal('conf-grid','Confirmation','activity',true)">
-            <div class="plus">＋</div><span class="add-label">Add Booking</span>
-        </div>
+     <div class="r-card add-card" onclick="openModal('conf-grid','Confirmation','hotel',true)">
+      <div class="plus">＋</div>
+      <span class="add-label">Add Booking</span>
     </div>
-</div>
+  </div>
+</div>>
+      
     <div class="day-card" style="animation-delay:0.1s">
       <div class="day-header">
         <div class="day-num">2</div>
