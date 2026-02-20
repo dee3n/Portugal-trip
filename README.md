@@ -205,9 +205,7 @@
 </div>
 
 <!-- HERO -->
-<div class="hero">
-  <span class="hero-flag">🇵🇹</span>
-  <h1>Lisbon & Porto</h1>
+
  <div class="hero">
     <span class="hero-flag">🇵🇹</span>
     <h1>Lisbon & Porto</h1>
