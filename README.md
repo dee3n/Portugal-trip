@@ -694,6 +694,7 @@
     card.innerHTML = html;
     grid.insertBefore(card, addCardEl);
   }
+  
   function editTripDate() {
     let current = document.getElementById('display-date').innerText;
     let val = prompt("Enter new trip dates:", current);
