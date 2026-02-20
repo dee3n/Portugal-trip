@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -696,9 +695,21 @@
   }
   
   function editTripDate() {
-    let current = document.getElementById('display-date').innerText;
-    let val = prompt("Enter new trip dates:", current);
-    if (val) document.getElementById('display-date').innerText = val;
+    const span = document.getElementById('display-date');
+    if (span.querySelector('input')) return;
+    const current = span.textContent;
+    const input = document.createElement('input');
+    input.value = current;
+    input.style.cssText = 'background:transparent;border:none;border-bottom:1px solid rgba(212,168,67,0.6);color:rgba(250,246,239,0.9);font-family:DM Sans,sans-serif;font-size:0.88rem;font-style:italic;text-align:center;outline:none;min-width:180px;';
+    span.textContent = '';
+    span.appendChild(input);
+    input.focus();
+    input.select();
+    input.addEventListener('blur', () => { span.textContent = input.value.trim() || current; });
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') input.blur();
+        if (e.key === 'Escape') { input.value = current; input.blur(); }
+    });
 }
 </script>
 </body>
