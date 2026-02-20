@@ -693,7 +693,8 @@
     html += '<span class="r-tag ' + (typeToTagClass[type]||'') + '">' + (typeToTag[type]||'Restaurant') + '</span>';
     card.innerHTML = html;
     grid.insertBefore(card, addCardEl);
-  }function editTripDate() {
+  }
+  function editTripDate() {
     let current = document.getElementById('display-date').innerText;
     let val = prompt("Enter new trip dates:", current);
     if (val) document.getElementById('display-date').innerText = val;
