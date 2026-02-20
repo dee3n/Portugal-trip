@@ -1,4 +1,4 @@
-[Index.html]
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -213,7 +213,6 @@
     <div class="hero-note" onclick="editTripDate()" style="cursor:pointer; background: rgba(212,168,67,0.2);">
         🗓️ <span id="display-date">Sep 17 - Sep 21, 2026</span>
     </div>
-</div>
   <span class="hero-note">A relaxed itinerary — less traveling, more living</span>
 </div>
 
@@ -268,16 +267,6 @@
         </div>
       </div>
     </div>
-<div id="confirmations" class="section">
-    <h2 class="section-title">Confirmations & Bookings</h2>
-    <div class="section-divider"></div>
-    <div class="restaurant-grid" id="conf-grid">
-     <div class="r-card add-card" onclick="openModal('conf-grid','Confirmation','hotel',true)">
-      <div class="plus">＋</div>
-      <span class="add-label">Add Booking</span>
-    </div>
-  </div>
-</div>>
       
     <div class="day-card" style="animation-delay:0.1s">
       <div class="day-header">
@@ -542,7 +531,16 @@
       </div>
     </div>
   </div>
-
+<div id="confirmations" class="section">
+    <h2 class="section-title">Confirmations & Bookings</h2>
+    <div class="section-divider"></div>
+    <div class="restaurant-grid" id="conf-grid">
+     <div class="r-card add-card" onclick="openModal('conf-grid','Confirmation','hotel',true)">
+      <div class="plus">＋</div>
+      <span class="add-label">Add Booking</span>
+    </div>
+  </div>
+</div>
   <!-- TIPS -->
   <div class="section" id="tips">
     <div class="section-title">Additional Info</div>
