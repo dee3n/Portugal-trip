@@ -1,4 +1,4 @@
-[index.html](https://github.com/user-attachments/files/25451473/index.html)
+(https://github.com/user-attachments/files/25451473/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -211,7 +211,7 @@
     <h1>Lisbon & Porto</h1>
     <div class="hero-sub">6 Days · Girls Trip 👯‍♀️</div>
     <div class="hero-note" onclick="editTripDate()" style="cursor:pointer; background: rgba(212,168,67,0.2);">
-        🗓️ <span id="display-date">Oct 12 - Oct 18, 2024</span>
+        🗓️ <span id="display-date">Sep 17 - Sep 21, 2026</span>
     </div>
 </div>
   <span class="hero-note">A relaxed itinerary — less traveling, more living</span>
