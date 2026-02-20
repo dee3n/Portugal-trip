@@ -208,15 +208,23 @@
 <div class="hero">
   <span class="hero-flag">🇵🇹</span>
   <h1>Lisbon & Porto</h1>
-  <div class="hero-sub">6 Days · Girls Trip 👯‍♀️</div>
+ <div class="hero">
+    <span class="hero-flag">🇵🇹</span>
+    <h1>Lisbon & Porto</h1>
+    <div class="hero-sub">6 Days · Girls Trip 👯‍♀️</div>
+    <div class="hero-note" onclick="editTripDate()" style="cursor:pointer; background: rgba(212,168,67,0.2);">
+        🗓️ <span id="display-date">Oct 12 - Oct 18, 2024</span>
+    </div>
+</div>
   <span class="hero-note">A relaxed itinerary — less traveling, more living</span>
 </div>
 
 <div class="nav-tabs">
-  <button class="tab-btn active" onclick="showTab('itinerary',this)">🗓 Itinerary</button>
-  <button class="tab-btn" onclick="showTab('lisbon-eats',this)">🍽 Lisbon Eats</button>
-  <button class="tab-btn" onclick="showTab('porto-eats',this)">🥂 Porto Eats</button>
-  <button class="tab-btn" onclick="showTab('tips',this)">💡 Tips</button>
+    <button class="tab-btn active" onclick="showTab('itinerary', this)">🗓 Itinerary</button>
+    <button class="tab-btn" onclick="showTab('lisbon-eats', this)">🍽 Lisbon Eats</button>
+    <button class="tab-btn" onclick="showTab('porto-eats', this)">🥂 Porto Eats</button>
+    <button class="tab-btn" onclick="showTab('confirmations', this)">📂 Confirmations</button>
+    <button class="tab-btn" onclick="showTab('tips', this)">💡 Additional Info</button>
 </div>
 
 <div class="content">
@@ -262,7 +270,21 @@
         </div>
       </div>
     </div>
-
+<div id="confirmations" class="section">
+    <h2 class="section-title">Confirmations & Bookings</h2>
+    <div class="section-divider"></div>
+    <div class="restaurant-grid" id="conf-grid">
+        <div class="r-card fancy">
+            <div class="r-name">Flight Confirmation</div>
+            <div class="r-desc">TAP Air #12345</div>
+            <a href="YOUR_LINK_HERE" class="r-link">View Document</a>
+            <span class="r-tag">Travel</span>
+        </div>
+        <div class="r-card add-card" onclick="openModal('conf-grid','Confirmation','activity',true)">
+            <div class="plus">＋</div><span class="add-label">Add Booking</span>
+        </div>
+    </div>
+</div>
     <div class="day-card" style="animation-delay:0.1s">
       <div class="day-header">
         <div class="day-num">2</div>
@@ -529,7 +551,7 @@
 
   <!-- TIPS -->
   <div class="section" id="tips">
-    <div class="section-title">Good to Know</div>
+    <div class="section-title">Additional Info</div>
     <div class="section-divider"></div>
     <div class="tip-box">
       <h3>🚂 Getting Around</h3>
